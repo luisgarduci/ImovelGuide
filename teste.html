@@ -3,29 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Captura de Tela com html2canvas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
-        div {
-            background-image: url(imagens/imagem-borrada-corretor.png);
-            
+        #content {
             position: relative;
-            background-size: cover;
-            background-position: center center;
+            width: 400px;
             height: 200px;
-            width: 200px;
+            background-image: url(imagens/casa.jpg);
+            background-size: cover;
+            border: 1px solid #000;
         }
-
-        div > img {
-            height: 100px;
+        #overlay-button {
             position: absolute;
-            
+            top: 50px;
+            left: 50px;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div>
-        <img src="imagens/homem.jpg" alt="">
-    </div>
+
+<div id="content">
+    <button id="overlay-button">Meu botão</button>
+</div>
+
+<button id="capture-btn">Capturar Tela</button>
+<img id="captured-image" alt="Captured Screenshot">
+
+<script>
+    document.getElementById('capture-btn').addEventListener('click', function() {
+        html2canvas(document.getElementById('content')).then(function(canvas) {
+            // Quando a captura de tela for concluída, o canvas renderizado será passado como argumento
+            // Adicione o canvas ao documento ou faça o que desejar com ele
+            document.body.appendChild(canvas);
+
+            // Converta o canvas em um URL de dados
+            var dataURL = canvas.toDataURL();
+
+            // Exiba a imagem capturada em um elemento <img>
+            var img = document.getElementById('captured-image');
+            img.src = dataURL;
+
+            var dataURL = canvas.toDataURL();
+
+    // Crie um elemento <a> para o link
+    var downloadLink = document.createElement('a');
+    downloadLink.href = dataURL;
+    downloadLink.download = 'captura_de_tela.png';
+    downloadLink.textContent = 'Baixar captura de tela';
+
+    // Anexe o link ao corpo do documento
+    document.body.appendChild(downloadLink);
+        });
+    });
+
     
+    // Converta o canvas em um URL de dados
+    
+
+</script>
+
 </body>
 </html>

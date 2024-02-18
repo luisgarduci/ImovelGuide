@@ -49,7 +49,7 @@ header > #container-link2 > button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 85px;
+    gap: 115px;
     margin-top: 50px;
 }
 
@@ -68,7 +68,6 @@ header > #container-link2 > button {
     border: none;
     padding: 8px;
     cursor: pointer;
-    
 }
 
 .container-principal > #cardMostrarTelefone {
@@ -199,15 +198,26 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
     background-position: center;
 }
 
-.container-principal > #cardModal > button, .container-principal > #cardCanvas > button#dowload {
+.container-principal > #cardModal > button {
     margin-top: 325px;
     width: 100%;
     border-radius: 5px;
-    
+}
+
+.container-principal > #cardCanvas > button#dowload {
+    margin-top: 293px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.container-principal > #cardCanvas {
+    background-image: url(../imagens/casa.jpg);
+    background-size: cover;
 }
 
 .container-principal > #cardAnimacao {
-    background-image: url(../imagens/gif.gif);
+    background-image: url(../imagens/gif2.gif);
     background-size: cover;
     background-position: center;
 }

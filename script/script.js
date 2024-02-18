@@ -22,7 +22,7 @@ let cardAnimacao = document.getElementById("cardAnimacao");
 window.onload = () => {
     setTimeout(() => {
         cardAnimacao.style.backgroundImage = "url('imagens/casa.jpg')"
-     }, 9000);
+     }, 11500);
 }
 
 let cpf = document.getElementById('cpf');
@@ -74,15 +74,6 @@ calcular.addEventListener("click", () => {
     resultado.innerHTML = conta.toFixed(2)
 })
 
-var cardCanvas = document.getElementById("cardCanvas");
 
-function addContent() {
-    
-    cardCanvas.style.backgroundImage = "url('imagens/casa.jpg')";
-
-    var button = document.createElement('button');
-    button.textContent = 'Meu botão';
-    cardCanvas.appendChild(button);
-}
 
 
