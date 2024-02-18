@@ -11,11 +11,9 @@ telefone_corretor.addEventListener("click", () => {
     telefone_corretor.style.textDecoration = "none";
 })
 
-let mensagem = document.getElementById("mensagem")
-let enviarMensagem = document.getElementById ("enviarMensagem");
-enviarMensagem.addEventListener("click", () => {
-alert ("Cpf: \n Telefone:  \n Mensagem: " + mensagem.value)
-})
+let header = document.getElementById("header");
+let principal = document.querySelector(".container-principal");
+let footer = document.getElementById("footer");
 //Obtendo o id do body para anexar o modal
 let body = document.getElementById("body")
 //Obtendo o id do modal
@@ -23,9 +21,20 @@ let abrir_modal = document.getElementById("abrir-modal");
 let cardAnimacao = document.getElementById("cardAnimacao");
 window.onload = () => {
     setTimeout(() => {
-        cardAnimacao.style.backgroundImage = "../imagens/casa.jpg" 
-     }, 10000);
+        cardAnimacao.style.backgroundImage = "url('imagens/casa.jpg')"
+     }, 9000);
 }
+
+let cpf = document.getElementById('cpf');
+let telefone = document.getElementById("telefone");
+$('#cpf').mask('000.000.000-00', {reverse: true});
+$('#telefone').mask('(00) 00000-0000');
+
+let mensagem = document.getElementById("mensagem")
+let enviarMensagem = document.getElementById ("enviarMensagem");
+enviarMensagem.addEventListener("click", () => {
+alert ("Cpf: " + cpf.value + "  \n Telefone: " + telefone.value + " \n Mensagem: " + mensagem.value)
+})
 
 abrir_modal.addEventListener("click", () => {
     let section = document.createElement("section");
@@ -43,9 +52,14 @@ abrir_modal.addEventListener("click", () => {
     section.appendChild(divClose);
     section.appendChild(imagem)
     body.appendChild(section);
-   
+    header.style.filter = "grayscale(55%)";
+    principal.style.filter = "grayscale(55%)";
+    footer.style.filter = "grayscale(55%)";
     let closeX = document.getElementById("closeX")
     closeX.addEventListener("click", () => {
+    header.style.filter = "grayscale(0%)";
+    principal.style.filter = "grayscale(0%)";
+    footer.style.filter = "grayscale(0%)";
     section.remove();
 })
 })

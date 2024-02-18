@@ -48,9 +48,8 @@ header > .container-links > i {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 85px;
     margin-top: 50px;
-    
 }
 
 .container-principal > .cards {
@@ -140,8 +139,8 @@ header > .container-links > i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 70px;
-    margin-top: 40px;
+    gap: 60px;
+    margin-top: 25px;
 }
 
 .container-principal > #cardMostrarTelefone > .container-informacoes-corretores > .informacao-corretor a, .informacao-corretora a {
@@ -166,11 +165,10 @@ gap: 7px;
 }
 
 .container-principal > #cardMostrarTelefone > .container-imagens-corretores > img{
-    width: 180px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    width: 160px;
 }
+
+
 
 .container-principal > #cardModal {
     background-image: url(../imagens/casa.jpg);
@@ -268,6 +266,10 @@ section.modal > .imagem-modal {
 }
 
 @media (max-width: 1367px) {
+    .container-principal {
+        gap: 60px;
+    }
+
     section.modal {
         height: 500px;
         
@@ -360,5 +362,9 @@ section.modal > .imagem-modal {
 @media (max-width: 540px) {
     footer > .container-copyright {
         gap: 0px;
+    }
+
+    footer > .container-copyright > p {
+        font-size: 14px;
     }
 }

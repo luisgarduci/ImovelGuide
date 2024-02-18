@@ -7,13 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="estilo/style.css">
+    
     <style>
         
         
     </style>
 </head>
 <body id="body">
-    <header>
+    <header id="header">
         
         <div class="container-links" id="container-link1">
             <img src="https://imovelguide.com.br/images/logo-imovel-guide.png" alt="">
@@ -35,8 +36,8 @@
     <section class="container-principal">
         <div class="cards" id="cardMostrarTelefone">
             <div class="container-imagens-corretores">
-                <img src="imagens/mulher.jpg" alt="" class="imagens-corretores">
-                <img src="imagens/homem.jpg" alt="" class="imagens-corretores">
+                <img src="imagens/mulher.jpg" alt="" class="imagens-corretores" id="imagem-corretora">
+                <img src="imagens/homem.jpg" alt="" class="imagens-corretores" id="imagem-corretor">
             </div>
             <div class="container-informacoes-corretores">
                 <div class="informacao-corretora">
@@ -53,7 +54,7 @@
            </div>
            <div class="cards" id="cardMascara">
                <h2>Mande uma mensagem:</h2>
-               <input type="text" name="" id="cpf" required placeholder="Digite seu cpf">
+               <input type="text" name="" id="cpf" required placeholder="Digite seu cpf" maxlength="14">
                
                <input type="tel" name="" id="telefone" required placeholder="Digite seu telefone">
                <textarea name="" id="mensagem" cols="45" rows="5" placeholder="Digite o assunto"></textarea>
@@ -87,7 +88,7 @@
         
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="container-informacoes">
         <a href="#">Termos</a>
         <a href="#">Contatos</a>
@@ -98,7 +99,8 @@
           <img src="https://imovelguide.com.br/images/logo-imovel-guide.png" alt="" class="logo">
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
     <script src="script/script.js">
     </script>
 </body>
