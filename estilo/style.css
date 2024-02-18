@@ -332,9 +332,9 @@ section.modal > .imagem-modal {
 @media (max-width: 700px) {
 
     section.modal {
-        height: 400px;
-        width: 300px;
-        
+        height: 350px;
+        width: 350px;
+        padding: 3px;
     }
 
     .container-principal > .cards {
