@@ -21,15 +21,6 @@ header > .container-links {
     gap: 50px;
 }
 
-header > #container-link2 > button {
-    border: 1px solid white;
-    background-color: transparent;
-    width: 100px;
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-}
-
 header > .container-links > a {
     color: white;
     text-decoration: none;
@@ -41,6 +32,15 @@ header > .container-links > i {
     display: none;
 }
 
+
+header > #container-link2 > button {
+    border: 1px solid white;
+    background-color: transparent;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
 
 
 .container-principal{
@@ -58,63 +58,6 @@ header > .container-links > i {
     height: 300px;
     padding: 10px;
     border-radius: 5px;
-}
-
-.container-principal > #cardMascara {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.container-principal > #cardMascara > #mensagem {
-    width: 100%;
-}
-
-.container-principal > .cards > input#telefone, input#cpf {
-    width: 90%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-.container-principal > #cardRegra > h2 {
-    margin: 5px 0px 50px 0px;
-}
-
-.container-nums {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-
-.container-principal > #cardRegra > .container-nums > input{
-    margin-top: 10px;
-    padding: 5px;
-    width: 120px;
-    border-radius: 5px;
-    border: 1px solid black;
-    text-align: center;
-}
-
-.container-principal > #cardRegra > .container-nums >  #resultado {
-    border: 1px solid #FE6613;
-    width: 130px;
-    line-height: 30px;
-    height: 25px;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.container-principal > #cardRegra > button#calcular {
-    margin: auto;
-    display: block;
-    margin-top: 40px;
 }
 
 .container-principal > .cards > button {
@@ -190,6 +133,62 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
     object-fit: cover;
 }
 
+.container-principal > #cardMascara {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-principal > .cards > input#telefone, input#cpf {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.container-principal > #cardMascara > #mensagem {
+    width: 100%;
+}
+
+.container-principal > #cardRegra > h2 {
+    margin: 5px 0px 50px 0px;
+}
+
+.container-principal > #cardRegra > .container-nums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+
+.container-principal > #cardRegra > .container-nums > input{
+    margin-top: 10px;
+    padding: 5px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container-principal > #cardRegra > .container-nums >  #resultado {
+    border: 1px solid #FE6613;
+    width: 130px;
+    line-height: 30px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-principal > #cardRegra > button#calcular {
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
 
 
 .container-principal > #cardModal {
