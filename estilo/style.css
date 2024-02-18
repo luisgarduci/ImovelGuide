@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -395,6 +396,10 @@ section.modal > .imagem-modal {
     .container-principal > #cardModal, .container-principal > #cardCanvas {
         margin-bottom: 20px;
        }
+
+       .container-principal > #cardMostrarTelefone > h3 {
+
+       }
 }
 
 @media (max-width: 540px) {
@@ -419,6 +424,10 @@ section.modal > .imagem-modal {
         width: 85%;
         top: 16%;
         
+    }
+
+    .container-principal > #cardMostrarTelefone > .container-informacoes-corretores h3 {
+        font-size: 16px;
     }
 }
 
