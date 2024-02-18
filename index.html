@@ -36,8 +36,13 @@
     <section class="container-principal">
         <div class="cards" id="cardMostrarTelefone">
             <div class="container-imagens-corretores">
-                <img src="imagens/mulher.jpg" alt="" class="imagens-corretores" id="imagem-corretora">
-                <img src="imagens/homem.jpg" alt="" class="imagens-corretores" id="imagem-corretor">
+                <div id="imagem-borrada-corretora" class="imagem-borrada">
+                    <img src="imagens/mulher.jpg" alt="" class="imagens-corretores" id="imagem-corretora">
+                </div>
+                <div id="imagem-borrada-corretor" class="imagem-borrada">
+                    <img src="imagens/homem.jpg" alt="" class="imagens-corretores" id="imagem-corretor">
+                </div>
+                
             </div>
             <div class="container-informacoes-corretores">
                 <div class="informacao-corretora">
@@ -79,7 +84,9 @@
             
            </div>
            <div class="cards" id="cardCanvas">
-               <button>Dowload</button>
+            
+            
+               <button id="dowload">Dowload</button>
            </div>
    
            <div class="cards" id="cardAnimacao">
@@ -101,7 +108,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-    <script src="script/script.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

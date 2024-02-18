@@ -73,3 +73,16 @@ calcular.addEventListener("click", () => {
     let conta = (num2.value * num3.value) / num1.value;
     resultado.innerHTML = conta.toFixed(2)
 })
+
+var cardCanvas = document.getElementById("cardCanvas");
+
+function addContent() {
+    
+    cardCanvas.style.backgroundImage = "url('imagens/casa.jpg')";
+
+    var button = document.createElement('button');
+    button.textContent = 'Meu botão';
+    cardCanvas.appendChild(button);
+}
+
+

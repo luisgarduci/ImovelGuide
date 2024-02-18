@@ -139,8 +139,8 @@ header > .container-links > i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 60px;
-    margin-top: 25px;
+    gap: 75px;
+    margin-top: 22px;
 }
 
 .container-principal > #cardMostrarTelefone > .container-informacoes-corretores > .informacao-corretor a, .informacao-corretora a {
@@ -152,7 +152,7 @@ display: flex;
 justify-content: flex-start;
 align-items: flex-start;
 flex-direction: column;
-gap: 7px;
+gap: 5px;
 }
 
 .container-principal > #cardMostrarTelefone > .container-imagens-corretores {
@@ -164,8 +164,30 @@ gap: 7px;
      margin-top: 15px;
 }
 
-.container-principal > #cardMostrarTelefone > .container-imagens-corretores > img{
-    width: 160px;
+.container-principal > #cardMostrarTelefone > .container-imagens-corretores > .imagem-borrada {
+width: 190px;
+background-size: cover;
+background-position: center center;
+position: relative;
+height: 130px;
+
+}
+
+.container-principal > #cardMostrarTelefone > .container-imagens-corretores > #imagem-borrada-corretor {
+background-image: url(../imagens/imagem-borrada-corretor.png);
+}
+
+.container-principal > #cardMostrarTelefone > .container-imagens-corretores > #imagem-borrada-corretora {
+    background-image: url(../imagens/imagem-borrada-corretora.png);
+}
+
+
+.container-principal > #cardMostrarTelefone > .container-imagens-corretores > .imagem-borrada > img{
+    width: 80%;
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    object-fit: cover;
 }
 
 
@@ -177,7 +199,7 @@ gap: 7px;
     background-position: center;
 }
 
-.container-principal > #cardModal > button, .container-principal > #cardCanvas > button {
+.container-principal > #cardModal > button, .container-principal > #cardCanvas > button#dowload {
     margin-top: 325px;
     width: 100%;
     border-radius: 5px;
@@ -354,6 +376,17 @@ section.modal > .imagem-modal {
         width: 300px;
     }
 
+    .container-principal > #cardMostrarTelefone > .container-imagens-corretores > .imagem-borrada {
+        width: 155px;
+        
+    }
+
+    .container-principal > #cardMostrarTelefone > .container-imagens-corretores > .imagem-borrada > img{
+        width: 85%;
+        top: 16%;
+        
+    }
+
 
     section.modal > .imagem-modal {
         height: 100%;
@@ -378,3 +411,16 @@ section.modal > .imagem-modal {
         height: 34px;
     }
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+    /* Estilos CSS para celular deitado */
+    section.modal {
+        height: 300px;
+        width: 500px;
+    }
+
+    section.modal > .imagem-modal {
+        height: 300px;
+        width: 85%;
+    }
+  }
