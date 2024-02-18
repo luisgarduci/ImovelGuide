@@ -142,6 +142,10 @@ header > .container-links > i {
     margin-top: 40px;
 }
 
+.container-principal > #cardMostrarTelefone > .container-informacoes-corretores > .informacao-corretor a, .informacao-corretora a {
+    color:#FE6613;
+}
+
 .container-principal > #cardMostrarTelefone > .container-imagens-corretores {
     display: flex;
     justify-content: flex-start;
@@ -165,9 +169,9 @@ header > .container-links > i {
     background-position: center;
 }
 
-.container-principal > #cardModal > button, .containers > #cardCanvas > button {
+.container-principal > #cardModal > button, .container-principal > #cardCanvas > button {
     margin-top: 325px;
-    width: 350px;
+    width: 100%;
     border-radius: 5px;
     
 }
@@ -178,9 +182,6 @@ header > .container-links > i {
     object-fit: cover; 
    
 }
-
-
-
 
 footer {
     background-color: #1b2653;
@@ -332,19 +333,17 @@ section.modal > .imagem-modal {
 
     section.modal {
         height: 400px;
-        width: 400px;
+        width: 300px;
         
     }
 
     .container-principal > .cards {
-        width: 300px;
+        width: 350px;
     }
-
-    
 
 
     section.modal > .imagem-modal {
-        height: 300px;
+        height: 100%;
         width: 100%;
     }
 }
