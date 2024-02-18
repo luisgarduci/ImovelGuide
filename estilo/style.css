@@ -278,6 +278,8 @@ section.modal > .imagem-modal {
     section.modal > .imagem-modal {
         height: 400px;
     }
+
+    
 }
 
 @media (max-width: 1200px) {
@@ -357,6 +359,10 @@ section.modal > .imagem-modal {
         height: 100%;
         width: 100%;
     }
+
+    .container-principal > #cardModal, .container-principal > #cardCanvas {
+        margin-bottom: 20px;
+       }
 }
 
 @media (max-width: 540px) {
