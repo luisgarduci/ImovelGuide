@@ -69,6 +69,10 @@ header > .container-links > i {
     gap: 20px;
 }
 
+.container-principal > #cardMascara > #mensagem {
+    width: 100%;
+}
+
 .container-principal > .cards > input#telefone, input#cpf {
     width: 90%;
     padding: 8px;
@@ -331,6 +335,12 @@ section.modal > .imagem-modal {
         width: 400px;
         
     }
+
+    .container-principal > .cards {
+        width: 300px;
+    }
+
+    
 
 
     section.modal > .imagem-modal {
