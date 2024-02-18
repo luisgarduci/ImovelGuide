@@ -99,6 +99,7 @@ header > .container-links > i {
     width: 120px;
     border-radius: 5px;
     border: 1px solid black;
+    text-align: center;
 }
 
 .container-principal > #cardRegra > .container-nums >  #resultado {
@@ -108,6 +109,7 @@ header > .container-links > i {
     height: 25px;
     border-radius: 5px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .container-principal > #cardRegra > button#calcular {
@@ -146,6 +148,14 @@ header > .container-links > i {
     color:#FE6613;
 }
 
+.container-principal > #cardMostrarTelefone > .container-informacoes-corretores > .informacao-corretor ,.informacao-corretora {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+gap: 7px;
+}
+
 .container-principal > #cardMostrarTelefone > .container-imagens-corretores {
     display: flex;
     justify-content: flex-start;
@@ -176,11 +186,10 @@ header > .container-links > i {
     
 }
 
-.container-principal > #cardAnimacao > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-   
+.container-principal > #cardAnimacao {
+    background-image: url(../imagens/gif.gif);
+    background-size: cover;
+    background-position: center;
 }
 
 footer {
@@ -350,6 +359,6 @@ section.modal > .imagem-modal {
 
 @media (max-width: 540px) {
     footer > .container-copyright {
-        gap: 5px;
+        gap: 0px;
     }
 }

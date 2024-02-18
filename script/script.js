@@ -1,8 +1,32 @@
+let telefone_corretora = document.getElementById("telefone-corretora");
+let telefone_corretor = document.getElementById("telefone-corretor");
+
+telefone_corretora.addEventListener("click", () => {
+telefone_corretora.style.textDecoration = "none";
+telefone_corretora.innerHTML = "(11) 98901-5678";
+});
+
+telefone_corretor.addEventListener("click", () => {
+    telefone_corretor.innerHTML = "(11) 96001-0287";
+    telefone_corretor.style.textDecoration = "none";
+})
+
+let mensagem = document.getElementById("mensagem")
+let enviarMensagem = document.getElementById ("enviarMensagem");
+enviarMensagem.addEventListener("click", () => {
+alert ("Cpf: \n Telefone:  \n Mensagem: " + mensagem.value)
+})
 //Obtendo o id do body para anexar o modal
 let body = document.getElementById("body")
 //Obtendo o id do modal
 let abrir_modal = document.getElementById("abrir-modal");
-let cardAnimacao = document.getElementById("")
+let cardAnimacao = document.getElementById("cardAnimacao");
+window.onload = () => {
+    setTimeout(() => {
+        cardAnimacao.style.backgroundImage = "../imagens/casa.jpg" 
+     }, 10000);
+}
+
 abrir_modal.addEventListener("click", () => {
     let section = document.createElement("section");
     section.setAttribute("class", "modal");
