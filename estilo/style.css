@@ -371,6 +371,10 @@ section.modal > .imagem-modal {
     }
 
     footer > .container-copyright > p {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    footer > .container-copyright > img {
+        height: 38px;
     }
 }
