@@ -77,13 +77,11 @@ calcular.addEventListener("click", () => {
 
 //Resolução Biblioteca externa Canvas
 document.getElementById('dowload').addEventListener('click', function() {
-    
     html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
     var dataURL = canvas.toDataURL();
     let btnDowload = document.getElementById("dowload")
     btnDowload.href = dataURL;
-    btnDowload.download = 'captura_de_tela.png';
-    btnDowload.textContent = 'Baixar captura de tela';
+    
 });
 });
 
