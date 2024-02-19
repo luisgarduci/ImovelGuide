@@ -208,7 +208,7 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
     border-radius: 5px;
 }
 
-.container-principal > #cardCanvas > a#dowload {
+.container-principal > #cardCanvas > a#download {
     padding: 8px;
     cursor: pointer;
     margin-top: 325px;
