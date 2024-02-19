@@ -32,39 +32,18 @@
     <button id="overlay-button">Meu botão</button>
 </div>
 
-<a href="#" id="dowload">Capturar Tela</a>
+<a href="#" id="download" download="screenshot.png">Capturar Tela</a>
 <img id="captured-image" alt="Captured Screenshot">
 
 <script>
-    let btnDowload = document.getElementById("dowload");
-    btnDowload.addEventListener('click', function() {
+    let btnDownload = document.getElementById("download");
+    btnDownload.addEventListener('click', function() {
         html2canvas(document.getElementById('content')).then(function(canvas) {
-            // Quando a captura de tela for concluída, o canvas renderizado será passado como argumento
-            // Adicione o canvas ao documento ou faça o que desejar com ele
-
-            // Converta o canvas em um URL de dados
             var dataURL = canvas.toDataURL();
-
-            // Exiba a imagem capturada em um elemento <img>
-            
-            
-        
-
-
-    // Crie um elemento <a> para o link
-    
-    btnDowload.href = dataURL;
-    
-
-    // Anexe o link ao corpo do documento
-    
+            btnDownload.href = dataURL;
+            document.getElementById("captured-image").src = dataURL; // Displaying the captured image
         });
     });
-
-    
-    // Converta o canvas em um URL de dados
-    
-
 </script>
 
 </body>
