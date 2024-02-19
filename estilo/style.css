@@ -336,7 +336,6 @@ section.modal > .imagem-modal {
         height: 400px;
     }
 
-    
 }
 
 @media (max-width: 1200px) {
@@ -354,7 +353,9 @@ section.modal > .imagem-modal {
 
 @media (max-width: 991px) {
     
-    
+    section.modal {
+        height: 400px;
+    }
     
     header > .container-links > a , header > .container-links > button#cadastro {
         display: none;
