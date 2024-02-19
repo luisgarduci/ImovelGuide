@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         // Crie um elemento <a> para o link
         var downloadLink = document.getElementById("download");
         downloadLink.href = dataURL;
-        downloadLink.download = 'casa.jpg';
+        downloadLink.download = 'casa';
     
         // Anexe o link ao corpo do documento
     });
