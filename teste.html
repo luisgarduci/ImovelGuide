@@ -40,7 +40,6 @@
         html2canvas(document.getElementById('content')).then(function(canvas) {
             // Quando a captura de tela for concluída, o canvas renderizado será passado como argumento
             // Adicione o canvas ao documento ou faça o que desejar com ele
-            document.body.appendChild(canvas);
 
             // Converta o canvas em um URL de dados
             var dataURL = canvas.toDataURL();
