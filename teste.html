@@ -32,8 +32,8 @@
     <button id="overlay-button">Meu botão</button>
 </div>
 
-<a href="" id="dowload-link">Dowload</button>
-<img id="captured-image" alt="Captured Screenshot">
+<a href="" id="download-link">Download</button>
+
 
 <script>
     html2canvas(document.getElementById('content')).then(function(canvas) {
@@ -41,7 +41,7 @@
     var dataURL = canvas.toDataURL();
 
     // Crie um elemento <a> para o link
-    var dowloadLink = document.getElementById("dowload-link");
+    var downloadLink = document.getElementById("download-link");
     downloadLink.href = dataURL;
     downloadLink.download = 'casa.jpg';
 
