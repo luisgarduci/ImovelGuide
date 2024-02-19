@@ -32,10 +32,11 @@
     <button id="overlay-button">Meu botão</button>
 </div>
 
-<button id="capture-btn">Capturar Tela</button>
+<a id="capture-btn">Capturar Tela</a>
 <img id="captured-image" alt="Captured Screenshot">
 
 <script>
+    let btnDowload = document.getElementById("dowload");
     document.getElementById('capture-btn').addEventListener('click', function() {
         html2canvas(document.getElementById('content')).then(function(canvas) {
             // Quando a captura de tela for concluída, o canvas renderizado será passado como argumento
@@ -47,17 +48,16 @@
             // Exiba a imagem capturada em um elemento <img>
             
             
+        
 
-            var dataURL = canvas.toDataURL();
 
     // Crie um elemento <a> para o link
-    var downloadLink = document.createElement('a');
-    downloadLink.href = dataURL;
-    downloadLink.download = 'captura_de_tela.png';
-    downloadLink.textContent = 'Baixar captura de tela';
+    
+    btnDowload.href = dataURL;
+    
 
     // Anexe o link ao corpo do documento
-    document.body.appendChild(downloadLink);
+    
         });
     });
 
