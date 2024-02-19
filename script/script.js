@@ -76,15 +76,19 @@ calcular.addEventListener("click", () => {
 })
 
 //Resolução Biblioteca externa Canvas
-html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
-    // Converta o canvas em um URL de dados
-    var dataURL = canvas.toDataURL();
-
-    // Crie um elemento <a> para o link
-    var downloadLink = document.getElementById("download");
-    downloadLink.href = dataURL;
-    downloadLink.download = 'casa.jpg';
-
-    // Anexe o link ao corpo do documento
+document.addEventListener('DOMContentLoaded', function() {
+    // Seu código html2canvas aqui
+    html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
+        // Converta o canvas em um URL de dados
+        var dataURL = canvas.toDataURL();
+    
+        // Crie um elemento <a> para o link
+        var downloadLink = document.getElementById("download");
+        downloadLink.href = dataURL;
+        downloadLink.download = 'casa.jpg';
+    
+        // Anexe o link ao corpo do documento
+    });
+    
 });
 
