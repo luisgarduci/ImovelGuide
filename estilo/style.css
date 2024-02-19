@@ -212,13 +212,14 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
     
     cursor: pointer;
     position: absolute;
-    width: 95%;
+    width: 80%;
     padding: 6px;
     border: none;
     border-radius: 5px;
     background-color: #FE6613;
     color: white;
     top: 105%;
+    left: 10%;
     text-decoration: none;
     text-align: center;
 }
@@ -316,6 +317,12 @@ section.modal > .imagem-modal {
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (min-width: 1968px) {
+    .container-principal {
+        gap: 190px;
+    }
 }
 
 @media (max-width: 1367px) {
