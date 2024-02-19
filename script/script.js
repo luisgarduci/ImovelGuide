@@ -1,3 +1,4 @@
+//Resolução Mostrar Telefone
 let telefone_corretora = document.getElementById("telefone-corretora");
 let telefone_corretor = document.getElementById("telefone-corretor");
 
@@ -11,30 +12,24 @@ telefone_corretor.addEventListener("click", () => {
     telefone_corretor.style.textDecoration = "none";
 })
 
-let header = document.getElementById("header");
-let principal = document.querySelector(".container-principal");
-let footer = document.getElementById("footer");
-//Obtendo o id do body para anexar o modal
-let body = document.getElementById("body")
-//Obtendo o id do modal
-let abrir_modal = document.getElementById("abrir-modal");
-let cardAnimacao = document.getElementById("cardAnimacao");
-window.onload = () => {
-    setTimeout(() => {
-        cardAnimacao.style.backgroundImage = "url('imagens/casa.jpg')"
-     }, 11500);
-}
-
+//Resolução Máscara
 let cpf = document.getElementById('cpf');
 let telefone = document.getElementById("telefone");
 $('#cpf').mask('000.000.000-00', {reverse: true});
 $('#telefone').mask('(00) 00000-0000');
-
 let mensagem = document.getElementById("mensagem")
 let enviarMensagem = document.getElementById ("enviarMensagem");
 enviarMensagem.addEventListener("click", () => {
 alert ("Cpf: " + cpf.value + "  \n Telefone: " + telefone.value + " \n Mensagem: " + mensagem.value)
 })
+
+//Resolução Modal
+let body = document.getElementById("body");
+let abrir_modal = document.getElementById("abrir-modal");
+let cardAnimacao = document.getElementById("cardAnimacao");
+let header = document.getElementById("header");
+let principal = document.querySelector(".container-principal");
+let footer = document.getElementById("footer");
 
 abrir_modal.addEventListener("click", () => {
     let section = document.createElement("section");
@@ -44,9 +39,7 @@ abrir_modal.addEventListener("click", () => {
     let close = document.createElement("img");
     close.setAttribute("src", "imagens/fechar.png");
     close.setAttribute("id", "closeX");
-    
     let imagem = document.createElement("div");
-    
     imagem.setAttribute("class", "imagem-modal")
     divClose.appendChild(close);
     section.appendChild(divClose);
@@ -64,6 +57,14 @@ abrir_modal.addEventListener("click", () => {
 })
 })
 
+
+window.onload = () => {
+    setTimeout(() => {
+        cardAnimacao.style.backgroundImage = "url('imagens/casa.jpg')"
+     }, 11500);
+}
+
+//Resolução Regra de 3
 let num1 = document.getElementById("num1")
 let num2 = document.getElementById("num2")
 let num3 = document.getElementById("num3");
@@ -74,31 +75,15 @@ calcular.addEventListener("click", () => {
     resultado.innerHTML = conta.toFixed(2)
 })
 
-
-
-
-
+//Resolução Biblioteca externa Canvas
 document.getElementById('dowload').addEventListener('click', function() {
     
     html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
-        // Quando a captura de tela for concluída, o canvas renderizado será passado como argumento
-        // Adicione o canvas ao documento ou faça o que desejar com ele
-
-        // Converta o canvas em um URL de dados
-        var dataURL = canvas.toDataURL();
-
-        // Exiba a imagem capturada em um elemento <img>
-        
-
+    var dataURL = canvas.toDataURL();
     let btnDowload = document.getElementById("dowload")
-
-// Crie um elemento <a> para o link
-btnDowload.href = dataURL;
-btnDowload.download = 'captura_de_tela.png';
-btnDowload.textContent = 'Baixar captura de tela';
-
-// Anexe o link ao corpo do documento
-
-    });
+    btnDowload.href = dataURL;
+    btnDowload.download = 'captura_de_tela.png';
+    btnDowload.textContent = 'Baixar captura de tela';
+});
 });
 
