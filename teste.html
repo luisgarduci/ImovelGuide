@@ -32,7 +32,7 @@
     <button id="overlay-button">Meu botão</button>
 </div>
 
-<button id="capture-btn">Capturar Tela</button>
+<a href="" id="dowload-link"></button>
 <img id="captured-image" alt="Captured Screenshot">
 
 <script>
@@ -41,13 +41,12 @@
     var dataURL = canvas.toDataURL();
 
     // Crie um elemento <a> para o link
-    var downloadLink = document.createElement('a');
+    var dowloadLink = document.getElementById("dowload-link");
     downloadLink.href = dataURL;
     downloadLink.download = 'casa.jpg';
-    downloadLink.textContent = 'Baixar captura de tela';
+    downloadLink.textContent = 'Dowload';
 
     // Anexe o link ao corpo do documento
-    document.body.appendChild(downloadLink);
 });
 </script>
 
