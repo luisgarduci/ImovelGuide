@@ -50,7 +50,11 @@ header > #container-link2 > button {
     align-items: center;
     flex-wrap: wrap;
     gap: 150px;
-    margin-top: 50px;
+    margin-top: 40px;
+}
+
+.container-principal > .imagens {
+    margin-top: -20px;
 }
 
 .container-principal > .cards {
@@ -300,6 +304,10 @@ section.modal > .imagem-modal {
 @media (max-width: 1367px) {
     .container-principal {
         gap: 60px;
+    }
+
+    .container-principal > .imagens {
+        margin-top: 0px;
     }
 
     section.modal {
