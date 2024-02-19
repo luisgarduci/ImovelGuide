@@ -36,7 +36,7 @@
 <img id="captured-image" alt="Captured Screenshot">
 
 <script>
-    html2canvas(document.body).then(function(canvas) {
+    html2canvas(document.getElementById('content')).then(function(canvas) {
     // Converta o canvas em um URL de dados
     var dataURL = canvas.toDataURL();
 
