@@ -36,17 +36,7 @@
 
 
 <script>
-    html2canvas(document.getElementById('content')).then(function(canvas) {
-    // Converta o canvas em um URL de dados
-    var dataURL = canvas.toDataURL();
-
-    // Crie um elemento <a> para o link
-    var downloadLink = document.getElementById("download-link");
-    downloadLink.href = dataURL;
-    downloadLink.download = 'casa.jpg';
-
-    // Anexe o link ao corpo do documento
-});
+    
 </script>
 
 </body>

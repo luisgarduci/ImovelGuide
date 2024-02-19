@@ -76,12 +76,15 @@ calcular.addEventListener("click", () => {
 })
 
 //Resolução Biblioteca externa Canvas
-document.getElementById('dowload').addEventListener('click', function() {
-    html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
+html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
+    // Converta o canvas em um URL de dados
     var dataURL = canvas.toDataURL();
-    let btnDowload = document.getElementById("dowload")
-    btnDowload.href = dataURL;
-    
-});
+
+    // Crie um elemento <a> para o link
+    var downloadLink = document.getElementById("download");
+    downloadLink.href = dataURL;
+    downloadLink.download = 'casa.jpg';
+
+    // Anexe o link ao corpo do documento
 });
 
