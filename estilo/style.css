@@ -234,7 +234,6 @@ left: 25%;
     background-image: url(../imagens/casa.jpg);
     background-size: cover;
     position: relative;
-    padding: 5px;
     background-position: center;
 }
 
@@ -342,17 +341,15 @@ section.modal > .imagem-modal {
 
 @media (max-width: 1200px) {
     header {
-        gap: 30px;
+        gap: 25px;
     }
 
     header > .container-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 28px;
+    font-size: 14px;
 }
 
-    
+
 }
 
 @media (max-width: 991px) {
@@ -422,7 +419,6 @@ section.modal > .imagem-modal {
         top: 16%;
         
     }
-
 
     section.modal > .imagem-modal {
         height: 100%;
