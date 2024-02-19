@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
         // Converta o canvas em um URL de dados
         var dataURL = canvas.toDataURL();
-        console.log(dataURL);
         // Crie um elemento <a> para o link
         var downloadLink = document.getElementById("download");
         downloadLink.href = dataURL;
