@@ -41,7 +41,7 @@
         html2canvas(document.getElementById('content')).then(function(canvas) {
             var dataURL = canvas.toDataURL();
             btnDownload.href = dataURL;
-            document.getElementById("captured-image").src = dataURL; // Displaying the captured image
+            
         });
     });
 </script>
