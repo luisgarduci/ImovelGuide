@@ -208,16 +208,30 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
     border-radius: 5px;
 }
 
-.container-principal > #cardCanvas > button#dowload {
-    margin-top: 293px;
+.container-principal > #cardCanvas > a#dowload > button{
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 325px;
     width: 100%;
+    border: none;
     border-radius: 5px;
+    background-color: #FE6613;
+    color: white;
+}
+
+.container-principal > #cardCanvas > button{
+position: absolute;
+top: 80%;
+left: 25%;
 }
 
 
 .container-principal > #cardCanvas {
     background-image: url(../imagens/casa.jpg);
     background-size: cover;
+    position: relative;
+    padding: 5px;
+    background-position: center;
 }
 
 .container-principal > #cardAnimacao {

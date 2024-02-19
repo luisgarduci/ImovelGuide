@@ -77,3 +77,28 @@ calcular.addEventListener("click", () => {
 
 
 
+
+document.getElementById('dowload').addEventListener('click', function() {
+    
+    html2canvas(document.getElementById('cardCanvas')).then(function(canvas) {
+        // Quando a captura de tela for concluída, o canvas renderizado será passado como argumento
+        // Adicione o canvas ao documento ou faça o que desejar com ele
+
+        // Converta o canvas em um URL de dados
+        var dataURL = canvas.toDataURL();
+
+        // Exiba a imagem capturada em um elemento <img>
+        
+
+    let btnDowload = document.getElementById("dowload")
+
+// Crie um elemento <a> para o link
+btnDowload.href = dataURL;
+btnDowload.download = 'captura_de_tela.png';
+btnDowload.textContent = 'Baixar captura de tela';
+
+// Anexe o link ao corpo do documento
+
+    });
+});
+
