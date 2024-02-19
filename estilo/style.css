@@ -466,15 +466,3 @@ section.modal > .imagem-modal {
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
-    /* Estilos CSS para celular deitado */
-    section.modal {
-        height: 300px;
-        width: 500px;
-    }
-
-    section.modal > .imagem-modal {
-        height: 300px;
-        width: 85%;
-    }
-  }
