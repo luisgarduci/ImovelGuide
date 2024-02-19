@@ -32,7 +32,7 @@
     <button id="overlay-button">Meu botão</button>
 </div>
 
-<button id="capture-btn">Capturar Tela</button>
+<a href="#" id="capture-btn">Capturar Tela</a>
 <img id="captured-image" alt="Captured Screenshot">
 
 <script>
@@ -47,16 +47,15 @@
             // Exiba a imagem capturada em um elemento <img>
             
 
-            
-
+        let btnDowload = document.getElementById("capture-btn")
+    
     // Crie um elemento <a> para o link
-    var downloadLink = document.createElement('a');
-    downloadLink.href = dataURL;
-    downloadLink.download = 'captura_de_tela.png';
-    downloadLink.textContent = 'Baixar captura de tela';
+    btnDowload.href = dataURL;
+    btnDowload.download = 'captura_de_tela.png';
+    btnDowload.textContent = 'Baixar captura de tela';
 
     // Anexe o link ao corpo do documento
-    document.body.appendChild(downloadLink);
+    
         });
     });
 
