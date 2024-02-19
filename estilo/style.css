@@ -208,15 +208,19 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
     border-radius: 5px;
 }
 
-.container-principal > #cardCanvas > a#download {
-    padding: 8px;
+.container-principal > #cardCanvas > #download {
+    
     cursor: pointer;
-    margin-top: 325px;
-    width: 100%;
+    position: absolute;
+    width: 95%;
+    padding: 6px;
     border: none;
     border-radius: 5px;
     background-color: #FE6613;
     color: white;
+    top: 105%;
+    text-decoration: none;
+    text-align: center;
 }
 
 .container-principal > #cardCanvas > button{
