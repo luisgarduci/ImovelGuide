@@ -61,7 +61,7 @@ abrir_modal.addEventListener("click", () => {
 window.onload = () => {
     setTimeout(() => {
         cardAnimacao.style.backgroundImage = "url('imagens/casa.jpg')"
-     }, 11500);
+     }, 11900);
 }
 
 //Resolução Regra de 3

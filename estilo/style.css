@@ -209,7 +209,6 @@ background-image: url(../imagens/imagem-borrada-corretor.png);
 }
 
 .container-principal > #cardCanvas > #download {
-    
     cursor: pointer;
     position: absolute;
     width: 80%;
